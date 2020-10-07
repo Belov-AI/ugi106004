@@ -18,9 +18,11 @@ namespace Task01
             Console.WriteLine("Введите вторую координату второй точки");
             var y2 = double.Parse(Console.ReadLine());
 
+            var dx = x1 - x2;
+            var dy = y1 - y2;
+
             var distance = Math.Round(
-                    Math.Sqrt(Math.Pow(x1 - x2, 2) 
-                    + Math.Pow(y1 - y2, 2)), 3);
+                    Math.Sqrt(dx * dx + dy * dy), 3);
 
             Console.WriteLine("Расстояние равно " + distance);
 
