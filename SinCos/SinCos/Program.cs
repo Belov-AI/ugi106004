@@ -6,8 +6,14 @@ namespace SinCos
     {
         static void Main()
         {
-            PrintSinCos(15);
-            PrintSinCos(37);
+            var alpha = 15;
+
+            PrintSinCos(alpha);
+
+            alpha = 37;
+            PrintSinCos(alpha);
+
+            alpha = 113;
             PrintSinCos(113);
 
             Console.ReadKey();
