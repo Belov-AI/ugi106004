@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymbolAnalysis", "SymbolAnalysis\SymbolAnalysis.csproj", "{61BC383C-3398-4DEE-9C84-845B6F80F157}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61BC383C-3398-4DEE-9C84-845B6F80F157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61BC383C-3398-4DEE-9C84-845B6F80F157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61BC383C-3398-4DEE-9C84-845B6F80F157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61BC383C-3398-4DEE-9C84-845B6F80F157}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4680EC53-3100-43B9-ADFA-D96D39C7684A}
+	EndGlobalSection
+EndGlobal
