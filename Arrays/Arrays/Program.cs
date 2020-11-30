@@ -19,7 +19,9 @@ namespace Arrays
                 numbers[i] = int.Parse(Console.ReadLine());
             }
 
-            PrintArray(numbers); 
+            PrintArray(numbers);
+
+            numbers = new[] { -5, -10 };
                
 
             Console.ReadKey();
@@ -27,8 +29,11 @@ namespace Arrays
 
         static void PrintArray(int[] array)
         {
-            for (var i = 0; i < array.Length; i++)
-                Console.Write($"{array[i]} ");
+            //for (var i = 0; i < array.Length; i++)
+            //    Console.Write($"{array[i]} ");
+
+            foreach(var elem in array)
+                Console.Write($"{elem} ");
 
             Console.WriteLine();
         }
