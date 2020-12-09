@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SophieGermainSequence", "SophieGermainSequence\SophieGermainSequence.csproj", "{D26375A4-08A1-45C8-8ADC-3690FDEA0454}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D26375A4-08A1-45C8-8ADC-3690FDEA0454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D26375A4-08A1-45C8-8ADC-3690FDEA0454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D26375A4-08A1-45C8-8ADC-3690FDEA0454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D26375A4-08A1-45C8-8ADC-3690FDEA0454}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C23609C-131B-494D-8287-28CDE23FC995}
+	EndGlobalSection
+EndGlobal
