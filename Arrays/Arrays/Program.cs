@@ -28,23 +28,23 @@ namespace Arrays
             PrintIndexOf(numbers, 5);
 
 
-            //var newNumbers = (int[])numbers.Clone();
+            var newNumbers = (int[])numbers.Clone();
 
-            //PrintArray(newNumbers);
-            //newNumbers[0] = 111;
-            //PrintArray(newNumbers);
-            //PrintArray(numbers);
+            PrintArray(newNumbers);
+            newNumbers[0] = 111;
+            PrintArray(newNumbers);
+            PrintArray(numbers);
 
-            //newNumbers[1] = 222;
-            //newNumbers[2] = 333;
-            //newNumbers[3] = 444;
-            //newNumbers[4] = 555;
-            //Array.Copy(newNumbers, numbers, newNumbers.Length);
-            //PrintArray(numbers);
+            newNumbers[1] = 222;
+            newNumbers[2] = 333;
+            newNumbers[3] = 444;
+            newNumbers[4] = 555;
+            Array.Copy(newNumbers, numbers, newNumbers.Length);
+            PrintArray(numbers);
 
-            //double[] array = new double[n];
-            //Array.Copy(numbers, array, numbers.Length);
-            //PrintArray(array);
+            double[] array = new double[n];
+            Array.Copy(numbers, array, numbers.Length);
+            PrintArray(array);
 
             Console.WriteLine();
 
@@ -54,9 +54,33 @@ namespace Arrays
 
             for (var i = 0; i < matrix.GetLength(0); i++)
                 for (var j = 0; j < matrix.GetLength(1); j++)
-                    matrix[i, j] = rnd.Next(0, 100);
+                    matrix[i, j] = rnd.Next(100);
 
             PrintMatrixArray(matrix);
+
+            var table = new int[4][];
+            table[0] = new int[3];
+            table[1] = new int[2];
+            table[2] = new int[3];
+            table[3] = new int[4];
+
+            //заполним эти массивы случайными числами от 0 до 9
+
+            Console.WriteLine($"Число массивов в массиве массивов: {table.Length}");
+
+            for (var i = 0; i < table.Length; i++)
+                for (var j = 0; j < table[i].Length; j++)
+                    table[i][j] = rnd.Next(10);
+
+            PrintArrayOfIntArrays(table);
+
+            var cities = new[] {
+                new[] {"Москва", "Екатеринбург", "Новосибирск", "Санкт-Петербург"},
+                new[] {"Париж", "Лондон", "Рим"},
+                new[] {"Пекин", "Токио", "Стамбул"},
+                };
+
+            PrintArrayOfStringArrays(cities);
 
             Console.ReadKey();
         }
@@ -101,6 +125,28 @@ namespace Arrays
                 Console.WriteLine();
             }
                 
+        }
+
+        static void PrintArrayOfIntArrays(int[][] array)
+        {
+            for (var i = 0; i < array.Length; i++)
+            {
+                for (var j = 0; j < array[i].Length; j++)
+                    Console.Write($"{array[i][j]} ");
+
+                Console.WriteLine();
+            }                    
+        }
+
+        static void PrintArrayOfStringArrays(string[][] array)
+        {
+            for (var i = 0; i < array.Length; i++)
+            {
+                for (var j = 0; j < array[i].Length; j++)
+                    Console.Write($"{array[i][j]} ");
+
+                Console.WriteLine();
+            }
         }
     }
 }
