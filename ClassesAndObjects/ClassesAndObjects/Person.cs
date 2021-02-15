@@ -28,7 +28,7 @@ namespace ClassesAndObjects
                 if (value > 0)
                     age = value;
                 else
-                    throw new ArgumentException("Возраст должен быть положительным");
+                    throw new Exception("Возраст должен быть положительным");
             }
         }
 

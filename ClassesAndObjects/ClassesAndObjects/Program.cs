@@ -21,7 +21,6 @@ namespace ClassesAndObjects
             ann.Age = 20;
             ann.PrinInfo();
 
-
             Console.WriteLine();
             Console.WriteLine(Person.Species);
             Person.PrintSpecies(peter);
