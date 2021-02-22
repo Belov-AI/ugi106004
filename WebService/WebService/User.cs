@@ -24,6 +24,11 @@ namespace WebService
             logFileName = $"log{DateTime.Now.ToShortDateString()}.txt";
         }
 
+        ~User()
+        {
+            Console.WriteLine($"Пользователь {Login} удален");
+        }
+
         public void PrintInfo()
         {
             Console.WriteLine($"Пользователь {Login}");

@@ -21,8 +21,17 @@ namespace WebService
 
             User.PrintLogFileName();
 
-            Console.ReadKey();
+            Service.LogIn(george);
+            Service.LogIn(kate);
+            Service.LogIn(somebody);
+            Service.LogIn(george);
+            Service.PrintInfo();
 
+            Service.LogOut(somebody);
+            Service.LogOut(somebody);
+            Service.PrintInfo();
+
+            //Console.ReadKey();
         }
     }
 }
