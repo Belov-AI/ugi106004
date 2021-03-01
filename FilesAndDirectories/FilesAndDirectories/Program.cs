@@ -26,6 +26,44 @@ namespace FilesAndDirectories
             text = File.ReadAllText("test.txt");
             Console.WriteLine(text);
 
+            var file = new FileInfo("test.txt");
+
+            Console.WriteLine(file.Name);
+            Console.WriteLine(file.FullName);
+
+            using (var stream = new StreamWriter("test.txt", true))
+            {
+                Console.WriteLine("Введите текст построчно (Enter - конец ввода)");
+
+                while (true)
+                {
+                    var input = Console.ReadLine();
+
+                    if (input == string.Empty)
+                        break;
+
+                    stream.WriteLine(input);
+                }
+            }
+
+            using (var stream = new StreamReader("test.txt"))
+            {
+                while (!stream.EndOfStream)
+                {
+                    Console.WriteLine(stream.ReadLine());
+                }
+            }
+
+            var listOfFiles = Directory.GetFiles(Directory.GetCurrentDirectory());
+
+            Console.WriteLine();
+
+            foreach (var fileName in listOfFiles)
+                Console.WriteLine(fileName.Substring(fileName.LastIndexOf('\\') + 1));
+
+            var current = new DirectoryInfo(".");
+            Console.WriteLine(current.Name);
+
             Console.ReadKey();
         }
     }

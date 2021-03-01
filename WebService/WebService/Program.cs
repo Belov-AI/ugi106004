@@ -31,7 +31,11 @@ namespace WebService
             Service.LogOut(somebody);
             Service.PrintInfo();
 
-            //Console.ReadKey();
+            var regUser = new RegisteredUser();
+            regUser.Login = "Mike";
+            regUser.PrintInfo();
+
+            Console.ReadKey();
         }
     }
 }
