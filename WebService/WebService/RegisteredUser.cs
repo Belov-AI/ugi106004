@@ -9,11 +9,21 @@ namespace WebService
     public class RegisteredUser : User
     {
         public string Email;
-        private string password;
+        protected string password;
+
+        public RegisteredUser(string login) : base(login) { }
+
+        public RegisteredUser() : base() { }
+
+        public RegisteredUser(string login, string pass, string email) : base(login)
+        {
+            password = pass;
+            Email = email;
+        }
 
         public void ChangePassword(string newPassword, string oldPassword)
         {
-            if (newPassword == oldPassword && newPassword.Length > 7)
+            if (password == oldPassword && newPassword.Length > 7)
                 password = newPassword;
         }
     }
