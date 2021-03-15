@@ -17,7 +17,7 @@ namespace GeometryUnitTestProject
         }
 
         [TestMethod]
-        public void IsInsideSegmenttest()
+        public void IsInsideSegmentTest()
         {
             var s = new Segment(new Point(1, 1), new Point(5, 3));
 

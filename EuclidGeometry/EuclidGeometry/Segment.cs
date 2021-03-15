@@ -27,5 +27,10 @@ namespace EuclidGeometry
                 return Math.Sqrt(dx * dx + dy * dy);
             }
         }
+
+        public bool IsContainPoint(Point p)
+        {
+            return p.IsInsideSegment(this);
+        }
     }
 }

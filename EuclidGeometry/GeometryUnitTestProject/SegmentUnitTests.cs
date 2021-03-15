@@ -30,6 +30,19 @@ namespace GeometryUnitTestProject
             Assert.AreEqual(Math.Sqrt(2), s2.Length, 1e-8);
         }
 
+        [TestMethod]
+        public void IsContainPointTest()
+        {
+            var s = new Segment(new Point(1, 1), new Point(5, 3));
+
+            var m1 = new Point(3, 2);
+            var m2 = new Point(-1, 0);
+            var m3 = new Point(2, 3);
+
+            Assert.IsTrue(s.IsContainPoint(m1));
+            Assert.IsFalse(s.IsContainPoint(m2));
+            Assert.IsFalse(s.IsContainPoint(m3));
+        }
 
         private Segment GetSegment(double ax, double ay, double bx, double by)
         {
